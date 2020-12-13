@@ -1,10 +1,3 @@
-import Skeleton from "react-loading-skeleton";
-
-import Nav from "@/components/nav";
-import { Container } from "react-bootstrap";
-import Entries from "@/components/entries";
-
-import { useEntries } from "@/lib/swr-hooks";
 import HomeContainer from "./home/[slug]";
 
 export default function IndexPage(props) {
