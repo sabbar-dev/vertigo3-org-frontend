@@ -1,0 +1,134 @@
+body {
+  background: #030200;
+}
+
+.wrapper {
+  position: relative;
+  padding-top: 15px;
+}
+
+.wrapper::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ffb001;
+  top: 57px;
+  position: absolute;
+}
+
+.column-left.logo {
+  max-width: 292px;
+  width: 100%;
+}
+
+.column-left h2 {
+  color: #feb100;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Calibri;
+  text-align: center;
+}
+
+.tabs-col {
+  margin-top: 12px;
+}
+
+.tabs-col .nav-tabs {
+  border-bottom: 0;
+}
+
+.tabs-col .nav-tabs .nav-item .nav-link {
+  color: #ffb001;
+}
+
+.tabs-col .nav-tabs .nav-item.show .nav-link,
+.tabs-col .nav-tabs .nav-link.active {
+  color: #ffb001;
+  background-color: #030200;
+  border-color: #ffb001;
+  border: 2px solid #ffb001;
+  border-bottom: 0;
+}
+
+.tabs-col .nav-tabs .nav-link {
+  border: 1px solid #ffb001;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  border-bottom: 0;
+}
+
+.inner-detail span {
+  color: #fff;
+  font-size: 14px;
+  font-family: Calibri;
+  display: block;
+}
+.inner-detail h3 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Calibri;
+  font-style: italic;
+}
+
+.inner-detail p {
+  color: #fff;
+  font-size: 16px;
+  font-family: Calibri;
+}
+.inner-detail p a {
+  color: #0563c1;
+  text-decoration: underline;
+}
+
+.inner-detail h4 {
+  color: #44d7f0;
+  font-size: 16px;
+  font-family: Calibri;
+  font-style: italic;
+}
+
+.inner-detail h2 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Calibri;
+  font-style: italic;
+}
+.inner-detail h5 {
+  color: #fff;
+  font-size: 18px;
+  font-family: Calibri;
+  font-style: italic;
+}
+
+.inner-detail h1 {
+  color: #fff;
+  font-size: 24px;
+  font-family: Calibri;
+}
+
+.inner-detail h6 {
+  color: #44d7f0;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Calibri;
+}
+.inner-detail h6 span {
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Calibri;
+  color: #0563c1;
+  text-decoration: underline;
+}
+
+/* .team-wrap {
+  height: 600px;
+  overflow-y: auto;
+} */
+
+.cover-image {
+  
+}
+.content-img-block{
+  display: flex;
+}

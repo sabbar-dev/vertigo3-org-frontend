@@ -1,0 +1,6 @@
+export { Why } from "./why"
+export { Approach } from "./approach"
+export { Team } from "./team"
+export { History } from "./history"
+export { Help } from "./help"
+export { Contact } from "./contact"
