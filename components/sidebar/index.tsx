@@ -1,6 +1,6 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -9,9 +9,9 @@ export default function Sidebar() {
         <img
           className="img-fluid"
           src="/images/vertigo3-orange-logo.png"
-          alt=""
+          style={{ cursor: "pointer" }}
         />
       </Link>
     </div>
-  )
+  );
 }

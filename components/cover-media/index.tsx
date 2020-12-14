@@ -23,7 +23,7 @@ export default function CoverMedia({ cover }) {
               <Col
                 key={i}
                 className="p-3 image-container cover-image"
-                style={{ minWidth: "616px" }}
+                style={{ maxWidth: "616px" }}
               >
                 <img
                   className="w-100 bnr-img"

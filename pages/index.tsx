@@ -13,5 +13,14 @@ export async function getStaticProps({ params }) {
     `${process.env.CMS_STRAPI_API_URL}/why`
   ).then((res) => res.json());
 
-  return { props: { page, tabs } };
+  return {
+    props: {
+      page,
+      tabs,
+      customTabs: [
+        { name: "Educators", slug: "educators", url: "/educators/overview" },
+        { name: "Tools", slug: "tools", url: "/tools" },
+      ],
+    },
+  };
 }
