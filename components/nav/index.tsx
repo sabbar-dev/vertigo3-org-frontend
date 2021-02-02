@@ -18,7 +18,7 @@ export default function TabsNav(props) {
             <Nav.Item key={_id}>
               <Link href={page.url}>
                 <a
-                  className={`nav-link ${
+                  className={`nav-link ${!page.url && "disabled-tab"} ${
                     router?.query?.slug === page.slug ? "active" : ""
                   }`}
                   aria-selected="true"
@@ -33,7 +33,7 @@ export default function TabsNav(props) {
             <Nav.Item key={i} className={`nav-item ${i < 1 ? "ml-auto" : ""}`}>
               <Link href={page.url}>
                 <a
-                  className={`nav-link ${
+                  className={`nav-link ${!page.url && "disabled-tab"} ${
                     router?.query?.slug === page.slug ? "active" : ""
                   }`}
                   aria-selected="true"
@@ -44,6 +44,11 @@ export default function TabsNav(props) {
             </Nav.Item>
           ))}
       </Nav>
+      <Nav.Item className="profile-icon">
+        <Nav.Link>
+          <img src="/images/user-photo.png"></img>
+        </Nav.Link>
+      </Nav.Item>
     </div>
   );
 }

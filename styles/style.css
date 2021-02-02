@@ -1,5 +1,19 @@
 body {
   background: #030200;
+  color: white;
+  font-family: Calibri;
+}
+
+.text-orange {
+  color: #ffb001;
+}
+
+.text-blue {
+  color: #44D7F0;
+}
+
+.text-white {
+  color: white;
 }
 
 .wrapper {
@@ -12,7 +26,7 @@ body {
   height: 2px;
   width: 100%;
   background: #ffb001;
-  top: 57px;
+  top: 64px;
   position: absolute;
 }
 
@@ -24,17 +38,17 @@ body {
 .column-left h2 {
   color: #feb100;
   font-size: 50px;
-  font-weight: bold;
-  font-family: Calibri;
   text-align: center;
 }
 
 .tabs-col {
   margin-top: 12px;
+  display: flex;
 }
 
 .tabs-col .nav-tabs {
   border-bottom: 0;
+  width: 100%;
 }
 
 .tabs-col .nav-tabs .nav-item .nav-link {
@@ -54,21 +68,13 @@ body {
   border: 1px solid #ffb001;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem 0.7rem;
   border-bottom: 0;
+  font-size: 1.3rem;
 }
 
-.inner-detail span {
-  color: #fff;
-  font-size: 14px;
-  font-family: Calibri;
-  display: block;
-}
-.inner-detail h3 {
-  color: #fff;
-  font-size: 24px;
-  font-family: Calibri;
-  font-style: italic;
+.tabs-col .nav-tabs .nav-item {
+  margin-right: 2px;
 }
 
 .inner-detail p {
@@ -81,54 +87,160 @@ body {
   text-decoration: underline;
 }
 
-.inner-detail h4 {
-  color: #44d7f0;
-  font-size: 16px;
-  font-family: Calibri;
-  font-style: italic;
+.disabled-tab {
+  color: #646464 !important;
+  border: 1px solid #646464 !important;
+  pointer-events: none !important;
 }
 
-.inner-detail h2 {
-  color: #fff;
-  font-size: 24px;
-  font-family: Calibri;
-  font-style: italic;
-}
-.inner-detail h5 {
-  color: #fff;
-  font-size: 18px;
-  font-family: Calibri;
-  font-style: italic;
+.profile-icon {
+  position: relative;
+  bottom: 20px;
 }
 
-.inner-detail h1 {
-  color: #fff;
-  font-size: 24px;
-  font-family: Calibri;
+.profile-icon img {
+  width: 50px;
 }
 
-.inner-detail h6 {
-  color: #44d7f0;
-  font-size: 11px;
-  font-weight: bold;
-  font-family: Calibri;
-}
-.inner-detail h6 span {
-  font-size: 11px;
-  font-weight: bold;
-  font-family: Calibri;
-  color: #0563c1;
-  text-decoration: underline;
+.profile-icon a {
+  border: unset !important;
 }
 
-/* .team-wrap {
-  height: 600px;
-  overflow-y: auto;
-} */
-
-.cover-image {
-  
-}
 .content-img-block{
   display: flex;
+}
+
+.help-checkbox-list ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.help-checkbox-list li {
+  padding:5px 8px;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.help-checkbox-list li label {
+  margin-right: 40px;
+}
+
+.customcheck {
+  position: relative;
+}
+
+.customcheck input {
+  display: none;
+}
+
+.customcheck input~.checkmark {
+  border: 1px solid orange;
+  width: 25px;
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  border-radius: 2px;
+  vertical-align:middle;
+  margin-right:10px;
+  cursor: pointer;
+}
+
+.customcheck input:checked~.checkmark:after,
+.customcheck input:checked~.checkmark:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 26px;
+  left: 11px;
+  top: -2px;
+  background: orange;
+}
+
+.customcheck input:checked~.checkmark:after {
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.customcheck input:checked~.checkmark:before {
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.rss-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rss-link img {
+  margin-left: 20px;
+}
+.contact-form input {
+  border: 1px solid orange;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.contact-form input:focus {
+  border-color: #80bdff !important;
+}
+.contact-form textarea {
+  border: 1px solid orange;
+  color: white;
+  background: transparent;
+}
+.contact-form textarea:focus {
+  background: transparent;
+  color: white;
+}
+.contact-form .submit-btn{
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.timeline-graphic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: -300px;
+  bottom: 0;
+  width: 1700px;
+  max-width: fit-content;
+}
+.team-tabs {
+  border-bottom: 2px solid orange;
+}
+
+.team-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  border: 1px solid #ffb001;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.2rem 0.7rem;
+  border-bottom: 0;
+  font-size: 1.3rem;
+  color: orange;
+}
+
+.team-tabs .nav-link.active {
+  color: orange;
+  background-color: black;
+  border-top: 2px solid orange;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+  border-bottom: 0;
+  position: relative;
+  top: 1px;
+}
+
+.team-tabs #team-tab-vertigo3 {
+  margin-right: 25%;
+  margin-left: 25px;
+}
+
+.team-tabs #team-tab-collab {
+  border: 0;
+  color: orange;
 }
